@@ -320,20 +320,20 @@ function App() {
             </p>
 
             <div className="contact-links">
-              <a href="mailto:your-email@example.com">your-email@example.com</a>
+              <a href="mailto:lecongtuan03012004@example.com">My Email</a>
               <a
-                href="https://github.com/yourname"
+                href="https://github.com/city314"
                 target="_blank"
                 rel="noreferrer"
               >
-                github.com/yourname
+                My GitHub
               </a>
               <a
-                href="https://linkedin.com/in/yourname"
+                href="https://www.linkedin.com/in/c%C3%B4ng-tu%E1%BA%A5n-l%C3%AA-040a52380/"
                 target="_blank"
                 rel="noreferrer"
               >
-                linkedin.com/in/yourname
+                My LinkedIn
               </a>
             </div>
           </div>

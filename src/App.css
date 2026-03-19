@@ -93,7 +93,6 @@ body {
 }
 
 .custom-navbar,
-.hero-section,
 .section-block {
   position: relative;
   z-index: 2;
@@ -104,6 +103,10 @@ body {
   background: rgba(248, 251, 255, 0.78);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(123, 145, 179, 0.12);
+}
+[data-theme="dark"] .custom-navbar {
+  background: rgba(123, 145, 179, 0.12);
+  border-bottom: 1px solid rgba(248, 251, 255, 0.78);
 }
 
 .brand-logo {
@@ -197,6 +200,11 @@ body {
   color: var(--heading);
   font-size: 0.95rem;
   box-shadow: var(--shadow-soft);
+}
+[data-theme="dark"] .hero-highlight-list span {
+  background: rgba(16, 25, 43, 0.7);
+  border: 1px solid var(--line);
+  color: var(--heading);
 }
 
 .hero-visual {
@@ -310,6 +318,11 @@ body {
   backdrop-filter: blur(10px);
   white-space: nowrap;
 }
+[data-theme="dark"] .hero-mini-sticker {
+  background: rgba(16, 25, 43, 0.88);
+  border: 1px solid rgba(0, 102, 255, 0.251);
+  color: var(--heading);
+}
 
 .sticker-react {
   top: 40px;
@@ -355,6 +368,12 @@ body {
   font-weight: 600;
   border-radius: 14px;
   padding: 12px 22px;
+}
+[data-theme="dark"] .btn-ghost,
+[data-theme="dark"] .btn-project-ghost {
+  background: rgba(16, 25, 43, 0.72) !important;
+  border: 1px solid rgba(79, 140, 255, 0.18) !important;
+  color: var(--primary-dark) !important;
 }
 
 .btn-ghost:hover,
@@ -406,7 +425,11 @@ body {
 }
 
 .glass-panel {
-  background: rgba(255, 255, 255, 0.72);
+  background: linear-gradient(
+    135deg,
+    rgba(79, 140, 255, 0.14),
+    rgba(139, 124, 255, 0.14)
+  );
   backdrop-filter: blur(14px);
   border: 1px solid rgba(123, 145, 179, 0.16);
   border-radius: 24px;
@@ -457,7 +480,11 @@ body {
 
 /* Projects */
 .project-card {
-  background: rgba(255, 255, 255, 0.82) !important;
+  background: linear-gradient(
+    135deg,
+    rgba(79, 140, 255, 0.14),
+    rgba(139, 124, 255, 0.14)
+  );
   backdrop-filter: blur(12px);
   border: 1px solid rgba(123, 145, 179, 0.16) !important;
   border-radius: 24px !important;
@@ -545,11 +572,15 @@ body {
 }
 
 .timeline-card {
-  background: rgba(255, 255, 255, 0.78);
+  background: linear-gradient(
+    135deg,
+    rgba(79, 140, 255, 0.14),
+    rgba(139, 124, 255, 0.14)
+  );
   border: 1px solid rgba(123, 145, 179, 0.14);
-  border-radius: 20px;
-  padding: 20px 22px;
-  box-shadow: var(--shadow-soft);
+  border-radius: 28px;
+  padding: 36px 28px;
+  box-shadow: var(--shadow);
 }
 
 .timeline-card h5 {
