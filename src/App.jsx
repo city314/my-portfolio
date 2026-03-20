@@ -11,6 +11,7 @@ import {
 import ParticlesBackground from "./components/ParticlesBackground";
 import ThemeToggle from "./components/ThemeToggle";
 import useTheme from "./hooks/useTheme";
+import { TypeAnimation } from "react-type-animation";
 import avatarImg from "./assets/avatar.jpg";
 import "./App.css";
 
@@ -23,34 +24,60 @@ function App() {
     "Bootstrap",
     "Node.js",
     "Express",
+    "MongoDB",
+    "Postgres",
     "Git",
     "GitHub",
+    "RESTful APIs",
+    "Responsive Design",
+    "UI/UX Principles",
   ];
 
   const projects = [
     {
-      title: "Portfolio Website",
+      title: "GoTripViet ~ AI-Based Tourism Tour Recommendation System",
       description:
-        "Trang portfolio cá nhân xây bằng React và React-Bootstrap để giới thiệu bản thân, kỹ năng và dự án.",
-      tech: ["React", "Bootstrap"],
-      github: "#",
-      demo: "#",
+        "Phát triển Website và Mobile app end-to-end và trải nghiệm chat AI. Thiết kế triển khai API Gateway routing đến 6 microservices. Tích hợp Cloudinary để lưu trữ hình ảnh và thanh toán qua VNPAY.",
+      tech: [
+        "ReactJS",
+        "React-Bootstrap",
+        "Flutter/Dart",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Docker",
+        "Qdrant",
+        "Ollama",
+        "Cloudinary",
+        "Railway",
+      ],
+      github: "https://github.com/city314/GoTripVietWeb",
+      demo: "https://gotripvietclient-production.up.railway.app/",
     },
     {
-      title: "Task Manager App",
+      title: "BKU’s LAB ~ Website & Admin Portal",
       description:
-        "Ứng dụng quản lý công việc với giao diện rõ ràng, responsive và dễ sử dụng.",
-      tech: ["React", "Node.js", "Express"],
+        "Xây dựng hệ thống full-stack gồm User site (6+ trang) và Admin portal để quản trị nội dung LAB cho Trung tâm Nghiên cứu công nghệ và thiết bị cơ khí",
+      tech: [
+        "ReactJS",
+        "React-Bootstrap",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Redux",
+        "Render(BE)",
+        "Vercel(FE)",
+      ],
       github: "#",
-      demo: "#",
+      demo: "https://bkulabclient.vercel.app/",
     },
     {
-      title: "E-commerce UI",
+      title: "Photography Learning Website ~ Portfolio cá nhân",
       description:
-        "Giao diện website bán hàng hiện đại, tối ưu trải nghiệm người dùng trên desktop và mobile.",
-      tech: ["React", "Bootstrap"],
-      github: "#",
-      demo: "#",
+        "Xây dựng website dạy học Photography và trưng bày các tác phẩm chụp ảnh của tôi, với giao diện hiện đại và trải nghiệm người dùng tốt.",
+      tech: ["ReactJS", "React-Bootstrap", "Vercel(FE)"],
+      github: "https://github.com/city314/Photography",
+      demo: "https://photography-eight-inky.vercel.app/",
     },
   ];
   const { theme, toggleTheme } = useTheme();
@@ -61,7 +88,7 @@ function App() {
         <Container>
           <Navbar.Brand href="#home" className="brand-logo">
             <span className="brand-dot"></span>
-            My Portfolio
+            Le Cong Tuan's Portfolio
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="portfolio-navbar"
@@ -88,8 +115,27 @@ function App() {
                 <p className="hero-kicker">Fullstack Developer</p>
 
                 <h1 className="hero-title">
-                  Tôi xây dựng website hiện đại,
-                  <span> rõ ràng và có chiều sâu kỹ thuật.</span>
+                  Tôi là <br />
+                  <TypeAnimation
+                    sequence={[
+                      "Lê Công Tuấn",
+                      1500,
+                      "Fullstack Developer",
+                      1500,
+                      "Backend Developer",
+                      1500,
+                      "Frontend Developer",
+                      1500,
+                      "Web Developer",
+                      1500,
+                    ]}
+                    wrapper="span"
+                    speed={50}
+                    deletionSpeed={65}
+                    repeat={Infinity}
+                    cursor={true}
+                    className="typing-text"
+                  />
                 </h1>
 
                 <p className="hero-subtitle">
